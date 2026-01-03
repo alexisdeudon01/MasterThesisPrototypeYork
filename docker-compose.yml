@@ -1,0 +1,13 @@
+services:
+  ids:
+    build: .
+    container_name: masterthesis_ids
+    working_dir: /app
+    volumes:
+      - .:/app
+      - ./data:/data
+    environment:
+      IDS_MODE: offline
+      PCAP_DIR: /data/pcap
+    shm_size: "2gb"
+    command: bash

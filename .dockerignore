@@ -1,0 +1,9 @@
+.git
+**/__pycache__/
+*.pyc
+.venv
+venv
+.run_state/
+orchestrator_logs/
+Python/preprocessed_dataset_memmap/
+data/
